@@ -18,7 +18,6 @@ export class UserInputComponent {
   enteredDuration?: number = 10;
 
   onCalculate() {
-    console.log('aux onCalculate:', this.enteredInitial, this.enteredAnual, this.enteredReturn, this.enteredDuration);
     if (this.enteredInitial && this.enteredAnual && this.enteredReturn && this.enteredDuration) {
       this.investmentService.generateTable(this.enteredInitial, this.enteredAnual, this.enteredReturn, this.enteredDuration);
     }

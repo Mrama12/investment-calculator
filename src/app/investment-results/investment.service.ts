@@ -14,7 +14,6 @@ export class InvestmentService {
   annualData: AnnualData[] = [];
 
   generateTable (initialInvestment: number, annualInvestment: number, expectedReturn: number, duration: number) {
-    console.log('aux generateTable:');
     const resultData = [];
     let investmentValue = initialInvestment;
   
